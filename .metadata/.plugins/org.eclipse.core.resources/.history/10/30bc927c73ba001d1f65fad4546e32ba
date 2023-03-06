@@ -1,0 +1,31 @@
+package stepdefinitions;
+
+public class ohrm {
+
+
+	Given("^User should open chrome Browser in the system$")
+	public void user_should_open_chrome_Browser_in_the_system() {
+	    
+	}
+
+	@When("^User Enter OrangeHRM Application URL Address$")
+	public void user_Enter_OrangeHRM_Application_URL_Address() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@Then("^User should be navigated to orangeHRM Application LogIn page$")
+	public void user_should_be_navigated_to_orangeHRM_Application_LogIn_page() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@Then("^User should be close the orangeHRM Application and the Browser$")
+	public void user_should_be_close_the_orangeHRM_Application_and_the_Browser() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+
+
+}

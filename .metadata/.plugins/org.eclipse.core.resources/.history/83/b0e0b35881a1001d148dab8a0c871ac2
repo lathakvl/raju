@@ -1,0 +1,88 @@
+package com.orangeHRMApplicationTestCases;
+
+import java.io.IOException;
+import java.util.Properties;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
+import com.utility.ExcelCommonMethods;
+import com.utility.orangeHRMProperty;
+
+import OHRMBase.BaseTest2;
+
+public class LoginFunctionalityTest extends BaseTest2 {
+
+Properties Property;
+String excelFileInputpath="C:\\Users\\makke\\OneDrive\\Desktop\\krishnaveni\\OrangeHRMApplication\\src\\main\\java\\LogInTest.xlsx";
+String excelFiloutputpath="C:\\Users\\makke\\OneDrive\\Desktop\\krishnaveni\\OrangeHRMApplication\\src\\main\\java\\LogInTest (1).xlsx";
+String sheetName="sheet1";
+ExcelCommonMethods excelFile;
+@Test(priority=1,description="validating login page-LOGIN panel Text")
+
+
+public void validateLoginPageTest()throws IOException{
+
+ExcelFile=new ExclecommonMethods("excelFileInputpath,excelFiloutputpath,sheetName");
+
+Property=orangeHRMProperty.loadproperty();
+By loginpageLoginPanelTextLocator=By.id(property.get property(loginpageLoginPanelProperty));
+String actual_loginpageLoginPanelText=driver.findElement(loginpageLoginPanelTextLocator).getText();
+excelFile.setcellvalue(1, 1, actual_loginpageLoginPanelText);
+String expected_loginpageLoginPanelText=excelFile.getcallvalue(1, 0);
+if(actual_loginpageLoginPanelText.equals(expected_loginpageLoginPanelText)) {
+Log.info("successfully navigated to the orangeHRM Application-pass");
+excelFile.setcellvalue(1, 2, "successfully navigated to the orangeHRM Application-pass");
+}
+else {
+	Log.info("Failed to navigate to the orangeHRM Application -FAIL");
+	excelFile.setcellvalue(1, 2, "Failed to navigate to the orangeHRM Application -FAIL");
+	OHRM Screenshot.takesScrenShot(driver,"errorToNavigateToHRM");
+}
+}
+@Test(priority=2,description="orangeHRM Application login functionality test")
+public void validateLoginFunctionlity LoginFunctionalityTest()throws IOException{
+
+int rowIndex=1;
+while(true) {
+	try {
+		
+		String userName=excelFile.getcallvalue(rowIndex, 3);
+		String password=excelFile.getcallvalue(rowIndex, 4);
+		By userNAmew
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

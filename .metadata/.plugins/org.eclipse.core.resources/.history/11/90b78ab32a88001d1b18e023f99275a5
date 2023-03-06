@@ -1,0 +1,14 @@
+package com.Arrays;
+
+public class ObjectArrayExample {
+ public static void main(String[] args) {
+	Object array1[]=new Object[4]; 	
+	
+       
+       
+       
+       
+       
+       
+       }
+}

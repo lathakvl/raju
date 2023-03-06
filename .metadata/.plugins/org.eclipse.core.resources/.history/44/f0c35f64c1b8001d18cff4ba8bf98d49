@@ -1,0 +1,46 @@
+package com.OHRM;
+
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeTest;
+
+
+
+public class BaseTest {
+
+public WebDriver driver;
+String ApplicationurlAddress="http://127.0.0.1/orangehrm-4.2.0.1/symfony/web/index.php/auth/login";
+
+
+
+
+@BeforeTest
+public void applicationlunch() {
+System.setProperty("WebDriver.chroem.driver", "./ChromeDriver_110v/chromedriver.exe");
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+}

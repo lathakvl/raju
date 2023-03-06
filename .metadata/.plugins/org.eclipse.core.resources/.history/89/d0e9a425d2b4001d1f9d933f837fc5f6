@@ -1,0 +1,50 @@
+package com.links;
+
+import org.openqa.selenium.WebDriver;
+
+public class naukri {
+public static void main(String[] args) {
+	WebDriver driver;
+	String ApplicationURLAddress="http://nakur.com/";
+	
+System.setProperty("Webdriver.chrome.driver", "./ChromeDriver_110v");
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

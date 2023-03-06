@@ -1,0 +1,40 @@
+package com.Arrays;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TSRTCApplication {
+       public static void main(String[] args) {
+		
+    WebDriver driver;
+   	String applicationurlAddress="https://www.tsrtconline.in/oprs-web/?ref=w3use";
+   	System.setProperty("webdriver.chrome.driver", "./ChromeDriver_110v/chromedriver.exe");
+   	driver=new ChromeDriver();
+   	driver.get(applicationurlAddress);      
+    By linksTagL=By.tagName("a"); 
+     List<WebElement>TSRTC_HomepageLinks=driver.findElements(linksTagL);
+     int TSRTC_HomepageLinks_count=TSRTC_HomepageLinks.size();
+     System.out.println("The number of links on the TSRTC Application Home page are:"+TSRTC_HomepageLinks_count);
+     for(int index=0;index<TSRTC_HomepageLinks.size();index++)
+     {
+      String Linkname=TSRTC_HomepageLinks.get(index).getText(); 
+      System.out.println(index+""+Linkname);
+       
+     }
+       
+       
+   //	<a class="tabcopy" href="/oprs-web/guest/ticket/cancel.do" target="_top" title="Cancel Tickets">Cancel Tickets</a>
+       
+       
+       
+       }
+
+
+
+
+
+}

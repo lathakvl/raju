@@ -1,0 +1,71 @@
+package com.captutingurladdress;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Facebook {
+ public static void main(String[] args) {
+	 WebDriver driver;
+     String applicationurlAddress="https://www.facebook.com/";
+     System.setProperty("webdriver.chrome.driver", "./Browserdriverfils/chromedriver.exe");
+     driver=new ChromeDriver();
+     driver.get(applicationurlAddress);
+     //validating the Login page of facebook Application
+     String expected_TitleoffacebookapplicationLogInpage="facebook";
+     System.out.println("The expected Title of the facebookApplicationLogINpage is:"+expected_TitleoffacebookapplicationLogInpage);
+    String actual_TitlefacebookpplicationLogINpage=driver.getTitle();
+    System.out.println("The actual Title og the facebookApplicationwebpage is:"+actual_TitlefacebookpplicationLogINpage);
+   if(actual_TitlefacebookpplicationLogINpage.equals(expected_TitleoffacebookapplicationLogInpage)) 
+		   {
+       System.out.println("Its aLogIn page of facebook Application-pass");
+		   }
+   else
+   {
+      System.out.println("Its NoT aLogIn page of facebook Application-fail");
+   }
+ String expected_url_AddressoffacebookApplicationpage="https://www.facebook.com";
+ System.out.println("The expected url Address of facebookpplicationLogINpage is:"+expected_TitleoffacebookapplicationLogInpage);
+ String actual_urlAddressoffacebookapplicationwedpage=driver.getCurrentUrl();
+ System.out.println("The actual_urlAddressoforangeHRMApplicationLogInpage is:"+actual_urlAddressoffacebookapplicationwedpage);
+  if(actual_urlAddressoffacebookapplicationwedpage.contains(expected_TitleoffacebookapplicationLogInpage))
+  {
+ System.out.println("Its a Login page of facebookapplication_URL Address matched pass");
+  }
+  else
+  {
+ System.out.println("Its NoT a Login page of facebook application_URL Address not matched_fail");
+  }
+ //Testing the Login Functionality of facebookapplication
+  //identifying the properties of username Element under
+  //<input name="txtusename" id="txtusername"type"text>"
+   //In the properties-identify the locator and Its Corresponding selector
+  //Locator (attribute)-id
+  //Selector(value)-txtusername
+  //To identify an element at least one unique locator and its corresponding selector is required
+     driver.findElement(By.id("inputtext")).sendKeys("powerstaradp@gmail.com");
+     //<input name="txtpassword"id"tctpassword"automatocomplete="ogg"type="password>"
+  //id-locator
+     //txtpassword-selector
+  //name=locater
+     //texpassword-selector
+     //driver.findElement(by.id("txtpassword")).sendkeys("password@123")
+  driver.findElement(By.name("inputtext")).sendKeys("princeno1");
+  //<input type="submit"name="submit"class="id="button"value="LOGIN>"
+  driver.findElement(By.className("button")).click();
+  driver.quit();
+  
+  
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ }
+}

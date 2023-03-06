@@ -1,0 +1,25 @@
+<suite name="orangeHrm Application"parallel="test>
+
+   <test name="chrome">
+
+      <parameter nmae "Browser"value="chrome"/>
+
+  <class>
+
+    </classname="com.Grid.OrangeHRMApplictionLogInTest/>
+
+  </classes>
+
+</test>
+
+   <test name="firefox">
+
+        <paramter name="Browser"value"frifox"/>
+<classes>
+        <class name="com.Grid.OrangeHRMApplictionLogInTest"/>
+
+   <class>
+
+</test>
+
+</suite>

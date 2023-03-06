@@ -1,0 +1,17 @@
+package browserAutomation;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Broswerstesting {
+  
+	//Chrome Browser Autiomation
+  System.setProperty("weddriver,chromedriver",/"Browserdriverfiles/chromedriver_win32);
+  ChromeDriver hi=new ChromeDriver();
+  
+  
+   
+   
+  
+  
+  }
+

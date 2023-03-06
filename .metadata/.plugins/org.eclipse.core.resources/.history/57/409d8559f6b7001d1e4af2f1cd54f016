@@ -1,0 +1,66 @@
+package com.OHM;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class OHRMApplicationAddemloyeeList {
+
+public static void main(String[] args) {
+	//WebDriver driver;
+	//String ApplicationurlAddress="http://127.0.0.1/orangehrm-4.2.0.1/";
+	System.setProperty("Webdriver.Chrome.Driver", "./ChromeDriver_110v/chromedriver.exe");
+	WebDriver driver=new ChromeDriver();
+	//driver.get(ApplicationurlAddress);
+	
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

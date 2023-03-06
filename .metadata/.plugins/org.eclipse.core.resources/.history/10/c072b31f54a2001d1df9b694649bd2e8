@@ -1,0 +1,7 @@
+#is the comment line in the properties file
+#id Locator for login page header text
+loginpageHeaderText= 
+#idLocator for userName locator
+UserNameProperty=
+#nameLocator for password element
+passwordProperty=

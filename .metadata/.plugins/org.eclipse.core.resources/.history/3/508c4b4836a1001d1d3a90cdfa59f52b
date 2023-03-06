@@ -1,0 +1,16 @@
+package com.utility;
+
+public class orangeHRMProperty {
+public static properties load property()
+FileInputstream OHRMApplicationProperties File=new  FileInputstream ("")
+
+
+
+
+
+
+
+
+
+
+}

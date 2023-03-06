@@ -1,0 +1,39 @@
+package com.orangeHRMApplicationTestCases;
+
+import java.util.Properties;
+
+import com.utility.ExcelCommonMethods;
+
+import OHRMBase.BaseTest2;
+
+public class LoginFunctionalityTest extends BaseTest2 {
+
+Properties Property;
+String excelFileInputpath="";
+String excelFiloutputpath="";
+String sheetName="";
+ExcelCommonMethods excelFile;
+@Test(priortity=1,description="validating login page-LOGIN panel Text");
+
+public void
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

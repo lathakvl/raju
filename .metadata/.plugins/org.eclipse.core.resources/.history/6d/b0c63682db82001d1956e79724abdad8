@@ -1,0 +1,24 @@
+package browserAutomation;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Broswerstesting {
+ public static void main(String[] args) {
+	System.setProperty("Webdriver.chrome.driver","./browserdriverfils/chromedriver.exe");
+	ChromeDriver hello=new ChromeDriver();
+     hello.get("http://facebook.com");
+     //hello.quit();
+     //hello.close();
+ 
+ 
+ }	
+}
+
+  
+  
+   
+   
+  
+  
+  
+

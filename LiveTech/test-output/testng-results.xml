@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-04T15:46:31 IST" name="Default suite" finished-at="2023-03-04T15:46:37 IST" duration-ms="5572">
+    <groups>
+    </groups>
+    <test started-at="2023-03-04T15:46:31 IST" name="Default test" finished-at="2023-03-04T15:46:37 IST" duration-ms="5572">
+      <class name="com.OHRM.BaseTest">
+        <test-method is-config="true" signature="applictaionlunch()[pri:0, instance:com.OHRM.BaseTest@15bbf42f]" started-at="2023-03-04T15:46:31 IST" name="applictaionlunch" finished-at="2023-03-04T15:46:37 IST" duration-ms="5420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applictaionlunch -->
+        <test-method signature="main()[pri:0, instance:com.OHRM.BaseTest@15bbf42f]" started-at="2023-03-04T15:46:37 IST" name="main" finished-at="2023-03-04T15:46:37 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method is-config="true" signature="Applicationclose()[pri:0, instance:com.OHRM.BaseTest@15bbf42f]" started-at="2023-03-04T15:46:37 IST" name="Applicationclose" finished-at="2023-03-04T15:46:37 IST" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Applicationclose -->
+      </class> <!-- com.OHRM.BaseTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

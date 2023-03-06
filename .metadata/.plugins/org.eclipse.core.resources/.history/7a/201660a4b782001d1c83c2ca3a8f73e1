@@ -1,0 +1,14 @@
+package browserAutomation;
+
+
+public class Broswerstesting {
+  
+	//Chrome Browser Autiomation
+  System.setProperty("weddriver,chromedriver")
+  
+   
+   
+  
+  
+  }
+

@@ -1,0 +1,136 @@
+package com.links;
+
+import java.sql.Driver;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ValiditesTsrtc_HeaderBlock_Testing {
+ public static void main(String[] args, Object Acutaltsrtchomepageurladdress) {
+	 
+	 WebDriver driver;
+	 
+	 String applicationurlAddress="https://www.tsrtconline.in/oprs-web/?ref=w3use";					  	
+	 System.setProperty("webdriver.chrome.driver", "./Browserdriverfils/chromedriver.exe");
+	  driver=new ChromeDriver();
+	  driver.get(applicationurlAddress);
+	  String expected_url_AddressofTSRTCpplicationpage="https://www.tsrtconline.in/oprs-web/?ref=w3use";
+      System.out.println("The expected url Address of TSRTCpplicationpage is:"+expected_url_AddressofTSRTCpplicationpage);
+      String actual_tsrtcapplicationhomepage=driver.getCurrentUrl();
+      System.out.println("The actual_urlAddressofApplicationLogInpage is:"+actual_tsrtcapplicationhomepage);
+      if(actual_tsrtcapplicationhomepage.contains(expected_url_AddressofTSRTCpplicationpage))
+      {
+     System.out.println("Its a  page of tsrtc applicationURL Address matched:pass");
+      }
+      else
+      {
+     System.out.println("its a page of tsrtc application url address notmatched:fail");
+     
+      }
+      
+	  
+	  
+	  
+      /*String expected_TSRTCapplicationhoemapageTextAfterLogout="";
+      System.out.println("The expected_textTSRTCApplicatiopage is:"+expected_TSRTCapplicationhoemapageTextAfterLogout );
+      By TSRTCL=By.className("selectedtabcopy");
+      WebElement actual_LoginPanelTextAfterLogoutElement=driver.findElement(loginpanelL);
+      String actual_LoginPanelTextAfterLogout=actual_LoginPanelTextAfterLogoutElement.getText();
+      System.out.println("The actual_textoforangehrmLoginpage is:"+ actual_LoginPanelTextAfterLogout);
+         if(actual_LoginPanelTextAfterLogout.equals(expected_LoginPanelTextAfterLogout)) {
+        	 
+        	 System.out.println("Login Panel Text after Logout is matched - Pass");
+        } else {
+        	System.out.println("Login Panel Text after Logout is not matched - Fail");
+        }*/
+	 String expectedtsrtchomepageurladdress="headerblockhome";
+	     System.out.println("The expected url of homepage is:"+expectedtsrtchomepageurladdress);
+		String Acutaltsrtchomepageurladdress1="headerblockhome";
+	   System.out.println("The Actual urladdress of Homepage is:"+Acutaltsrtchomepageurladdress1);
+	   if (Acutaltsrtchomepageurladdress1.equals(expectedtsrtchomepageurladdress))
+	    {	
+	    System.out.println("Both the actual and expected  tsrtc url address of homepage are the same-pass");
+	     
+	    }
+	     else
+	    
+	     {
+	        
+	   System.out.println("Both the actual and expeted tsrtc url address of homepageare Not the same-fail");
+	}
+	 
+	 
+   
+	  
+	  
+	  
+	 
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      /*
+	    //Navigate to TSRTC and maxinizing the browser
+	   	//maxinize the beoswer
+	  String expected_TitleofTSRTCapplicationHomepage="TSRTC";
+	   	driver.manage().window().maximize();
+	    By tsrtc_HeaderBlockL=By.className("menu-wrap");
+	    WebElement tsrtc_HeaderBlock =driver.findElement(tsrtc_HeaderBlockL);
+	    By headerBlockElementLocator=By.tagName("a");
+	    List<WebElement>headerBlockLinks=tsrtc_HeaderBlock.findElements(headerBlockElementLocator);
+	    int headerBlockLinks_count=headerBlockLinks.size();
+	    System.out.println("The numeber of elements of type links in the Header "+"Block of TSRTC ApplicationHome are:"+headerBlockLinks_count);
+	    //getting the element names of the header Block
+	    
+	    for(int index=0;index<headerBlockLinks_count;index++)
+	    {
+	      String headerBlock_LinkName=headerBlockLinks.get(index).getText();
+	      System.out.println(index+""+headerBlock_LinkName);
+	       headerBlockLinks.get(index).click();
+	       //getting the tittle of the webpage
+	       System.out.println(driver.getTitle());
+	       
+	       //getting the current url address
+	       System.out.println(driver.getCurrentUrl());
+	       
+	       //since the driver focus is moved to next page
+	       driver.navigate().back();
+	       
+	       //once the driver is back to the webpage
+	       tsrtc_HeaderBlock =driver.findElement(tsrtc_HeaderBlockL);
+	       
+	      //Re-crating the arrayList
+	       headerBlockLinks=tsrtc_HeaderBlock.findElements(headerBlockElementLocator);
+	     						
+	*/
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ }
+
+
+
+
+
+
+
+
+}

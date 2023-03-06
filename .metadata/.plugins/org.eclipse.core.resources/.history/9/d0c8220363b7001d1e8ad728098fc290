@@ -1,0 +1,65 @@
+package Toselect;
+
+import org.openqa.selenium.By;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class DropdownCurrentLocation {
+ public static void main(String[] args) {
+	 WebDriver driver;
+	 String applicationurlAddress="https://my monsterindia.com/sponsered_popup.html";
+	  System.setProperty("webdriver.chrome.driver","C:\\Users\\makke\\OneDrive\\Desktop\\krishnaveni\\myfristproject\\Browserdriverfiles\\chromedriver.exe");
+	  driver=new ChromeDriver();
+	  driver.get(applicationurlAddress);
+//Navigate To monster Application
+	  
+	  By CurrentLocationLocator=By.className("");
+	  WebElement CurrentLocation=driver.findElement(CurrentLocationLocator);
+	  Select CurrentLocationSelection=new Select(CurrentLocation);
+      CurrentLocationSelection.deselectByVisibleText("");
+      By industryLocator=By.id("");
+      WebElement industry=driver.findElement(industryLocator);
+      Select industrySelection=new Select();
+      industrySelection.Select ByVisibleText)(other);
+      industrySelection.SelectByvalue("");
+      industrySelection.selectByIndex();
+      //Deslecting the selected optional vaules
+      //Industry section deselectAll();
+      industrySelection.deselectByValue();
+      industrySelection.deselectByIndex();
+ 
+     
+ 
+ 
+ 
+ 
+ 
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,20 @@
+package com.Arrays;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Get_text {
+       public static void main(String[] args) {
+		
+    	   WebDriver driver;
+    	    String applicationurlAddress="http://127.0.0.1/orangehrm-4.2.0.1/";
+    	    System.setProperty("webdriver.chrome.driver", "./Browserdriverfils/chromedriver.exe");
+    	    driver=new ChromeDriver();
+    	    driver.get(applicationurlAddress);      
+       By signIN
+       
+       
+       
+       
+       }
+}

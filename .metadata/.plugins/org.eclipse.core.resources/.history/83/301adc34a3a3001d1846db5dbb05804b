@@ -1,0 +1,23 @@
+package stepDefinations;
+
+public class cucumberclass {
+
+@Runwith(cucumber.class)
+@cucumberoptions(Features="orangeHRMApplication");
+
+glue="StepDefinations",
+monochrome=true)
+public class TestRunner{
+	
+}
+
+
+
+
+
+
+
+
+
+
+}

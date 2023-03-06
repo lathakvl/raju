@@ -1,0 +1,51 @@
+package com.orangeHRMApplicationTestCases;
+
+import java.util.Properties;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
+import com.utility.ExcelCommonMethods;
+import com.utility.orangeHRMProperty;
+
+import OHRMBase.BaseTest2;
+
+public class LoginFunctionalityTest extends BaseTest2 {
+
+Properties Property;
+String excelFileInputpath="C:\\Users\\makke\\OneDrive\\Desktop\\krishnaveni\\OrangeHRMApplication\\src\\main\\java\\LogInTest.xlsx";
+String excelFiloutputpath="C:\\Users\\makke\\OneDrive\\Desktop\\krishnaveni\\OrangeHRMApplication\\src\\main\\java\\LogInTest (1).xlsx";
+String sheetName="sheet1";
+ExcelCommonMethods excelFile;
+@Test(priority=1,description="validating login page-LOGIN panel Text")
+
+
+public void validateLoginPageTest()throws 
+
+ExcelFile=new ExclecommonMethods("excelFileInputpath,excelFiloutputpath,sheetName");
+
+Property=orangeHRMProperty.loadproperty();
+By loginpageLoginPanelTextLocator=By.id(property.get property(loginpageLoginPanelProperty));
+String actual_loginpageLoginPanelText=driver.findElement(loginpageLoginPanelTextLocator).getText();
+excelFile.setcellvalue(1, 1, actual_loginpageLoginPanelText);
+String expected_loginpageLoginPanelText.equals(expected_loginpageLoginPanelText)){
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

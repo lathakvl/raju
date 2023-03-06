@@ -1,0 +1,25 @@
+package browserAutomation;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Broswerstesting {
+ public static void main(String[] args) {
+	System.setProperty("Webdriver.chrome.driver","./Browserdriverfiles/chromedriver.exe");
+	ChromeDriver hello=new ChromeDriver();
+     
+	hello.navigate().to("http://bing.com");
+     //hello.quit();
+     //hello.close();
+ 
+ 
+ }	
+}
+
+  
+  
+   
+   
+  
+  
+  
+

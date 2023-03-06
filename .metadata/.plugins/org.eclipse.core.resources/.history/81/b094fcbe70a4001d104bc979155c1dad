@@ -1,0 +1,15 @@
+package ORHMApplicationcucumber.cucumber1;
+
+import org.junit.runner.RunWith;
+
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features="ORHMApplicationcucumber.cucumber1",
+             glue="ORHMApplicationcucumber.cucumber1",monochrome=true,dryRun=true)
+public class stepDefination {
+
+
+	
+}

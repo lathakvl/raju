@@ -1,0 +1,53 @@
+package com.links;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class naukri {
+public static void main(String[] args) {
+	WebDriver driver;
+	String ApplicationURLAddress="https://www.naukri.com/nlogin/login?msg=0&URL=https%3A%2F%2Fmy.naukri.com%3A80";
+	
+  System.setProperty("Webdriver.chrome.driver", "./ChromeDriver_110v/chromedriver.exe");
+  driver=new ChromeDriver();
+  driver.get(ApplicationURLAddress);
+  driver.manage().window().maximize();
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

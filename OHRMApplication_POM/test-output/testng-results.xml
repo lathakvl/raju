@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-02-23T11:47:21 IST" name="Default suite" finished-at="2023-02-23T11:47:39 IST" duration-ms="17503">
+    <groups>
+    </groups>
+    <test started-at="2023-02-23T11:47:21 IST" name="Default test" finished-at="2023-02-23T11:47:39 IST" duration-ms="17503">
+      <class name="OrangeHRMApplicationTestcases.OrangeHRMLogin">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:OrangeHRMApplicationTestcases.OrangeHRMLogin@413d1baf]" started-at="2023-02-23T11:47:21 IST" name="setUp" finished-at="2023-02-23T11:47:30 IST" duration-ms="8678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="logInPageLogoValidationTest()[pri:1, instance:OrangeHRMApplicationTestcases.OrangeHRMLogin@413d1baf]" started-at="2023-02-23T11:47:30 IST" name="logInPageLogoValidationTest" description=" validating OrangeHRM Application LogIN Page Logo Test " finished-at="2023-02-23T11:47:30 IST" duration-ms="175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logInPageLogoValidationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:OrangeHRMApplicationTestcases.OrangeHRMLogin@413d1baf]" started-at="2023-02-23T11:47:30 IST" name="tearDown" finished-at="2023-02-23T11:47:30 IST" duration-ms="305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:OrangeHRMApplicationTestcases.OrangeHRMLogin@413d1baf]" started-at="2023-02-23T11:47:30 IST" name="setUp" finished-at="2023-02-23T11:47:32 IST" duration-ms="1600" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="logInPageTextValidationTest()[pri:2, instance:OrangeHRMApplicationTestcases.OrangeHRMLogin@413d1baf]" started-at="2023-02-23T11:47:32 IST" name="logInPageTextValidationTest" description=" validating OrangeHRM Application LogIN Page Text Test " finished-at="2023-02-23T11:47:32 IST" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logInPageTextValidationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:OrangeHRMApplicationTestcases.OrangeHRMLogin@413d1baf]" started-at="2023-02-23T11:47:32 IST" name="tearDown" finished-at="2023-02-23T11:47:32 IST" duration-ms="175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:OrangeHRMApplicationTestcases.OrangeHRMLogin@413d1baf]" started-at="2023-02-23T11:47:32 IST" name="setUp" finished-at="2023-02-23T11:47:33 IST" duration-ms="1357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="logInPageLogInFuncationalityTest()[pri:3, instance:OrangeHRMApplicationTestcases.OrangeHRMLogin@413d1baf]" started-at="2023-02-23T11:47:33 IST" name="logInPageLogInFuncationalityTest" description=" validating OrangeHRM Application LogIN Page LogIn Funcationality Test " finished-at="2023-02-23T11:47:38 IST" duration-ms="4864" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logInPageLogInFuncationalityTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:OrangeHRMApplicationTestcases.OrangeHRMLogin@413d1baf]" started-at="2023-02-23T11:47:38 IST" name="tearDown" finished-at="2023-02-23T11:47:39 IST" duration-ms="228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- OrangeHRMApplicationTestcases.OrangeHRMLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

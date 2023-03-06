@@ -1,0 +1,71 @@
+package com.orangehrm;
+
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.seleniumhq.jetty9.util.security.Password;
+
+
+
+
+public class ValidaingorabgeHRMApplication {
+ public static void main(String[] args) {
+	 WebDriver driver;
+     String applicationurlAddress="http://127.0.0.1/orangehrm-4.2.0.1/";
+     System.setProperty("webdriver.chrome.driver", "./Browserdriverfils/chromedriver.exe");
+     driver=new ChromeDriver();
+     driver.get(applicationurlAddress);
+     //validating the Login page of orangeHRM Application
+     String expected_TitleoforangeHrmapplicationLogInpage="OrangeHRM";
+     System.out.println("The expected Title of the orangeHRMApplicationLogINpage is:"+expected_TitleoforangeHrmapplicationLogInpage);
+    String actual_TitleorangeHRMApplicationLogINpage=driver.getTitle();
+    System.out.println("The actual Title og the orangeHRMApplicationwebpage is:"+actual_TitleorangeHRMApplicationLogINpage);
+   if(actual_TitleorangeHRMApplicationLogINpage.equals(expected_TitleoforangeHrmapplicationLogInpage)) 
+		   {
+       System.out.println("Its aLogIn page of orangeHrm Application-pass");
+		   }
+   else
+   {
+      System.out.println("Its NoT aLogIn page of orangeHrm Application-fail");
+   }
+ String expected_url_AddressoforangeHRMApplicationpage="http://127.0.0.1/orangehrm-4.2.0.1/";
+ System.out.println("The expected url Address of orangeHRMApplicationLogINpage is:"+expected_TitleoforangeHrmapplicationLogInpage);
+ String actual_urlAddressoforangeHRMapplicationwedpage=driver.getCurrentUrl();
+ System.out.println("The actual_urlAddressoforangeHRMApplicationLogInpage is:"+actual_urlAddressoforangeHRMapplicationwedpage);
+  if(actual_urlAddressoforangeHRMapplicationwedpage.contains(expected_url_AddressoforangeHRMApplicationpage))
+  {
+ System.out.println("Its a Login page of orange HRM application_URL Address matched pass");
+  }
+  else
+  {
+ System.out.println("Its NoT a Login page of orange HRM application_URL Address not matched_fail");
+  }
+ //Testing the Login Functionality of orange HRM application
+  //identifying the properties of username Element unde
+  By usernameL=By.id("txtUsername");
+  WebElement username=driver.findElement(usernameL);
+  username.sendKeys("Krishnaveni");
+  By passwordL=By.name("txtPassword");
+  WebElement Password= driver.findElement(passwordL);
+  Password.sendKeys("Kittu@123");
+  By loginL=By.className("Submit");
+  WebElement login =driver.findElement(loginL);
+  login.click();
+ 
+
+   //driver.findElement(By.name("txtpassword")).sendKeys("Happy@123");
+  //<input type="submit"name="submit"class="id="button"value="LOGIN>"
+ // driver.findElement(By.className("button")).click();
+  driver.quit();
+  
+ }
+ }
+
+
+
+
+
+
+

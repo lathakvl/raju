@@ -1,0 +1,27 @@
+package com.orangehrm;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ValidaingorabgeHRMApplication {
+	WebDriver driver;
+    String applicationurlAddress="http://google.com";
+    System.setProperty("webdriver.chrome.driver","./Browserdriverfils/chromedriver.exe");
+    driver=new ChromeDriver();
+    driver.get(applicationurlAddress);public static void main(String[] args) {
+	
+
+  
+  
+  
+  
+  
+  
+  }
+
+
+
+
+
+
+}

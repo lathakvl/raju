@@ -1,0 +1,29 @@
+package com.links;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class HeaderBlock {
+public static void main(String[] args) {
+						
+	WebDriver driver;
+   	String applicationurlAddress="https://www.tsrtconline.in/oprs-web/?ref=w3use";
+   	System.setProperty("webdriver.chrome.driver", "./Browserdriverfils/chromedriver.exe");
+   	driver=new ChromeDriver();
+   	driver.get(applicationurlAddress);				
+    //Navigate to TSRTC and maxinizing the browser
+   	//maxinize the beoswer
+   	//driver.manage().window().maximize();
+   	//By tsrct_HeaderBlockL=By.className("");
+      
+
+
+
+
+
+}
+
+
+
+}

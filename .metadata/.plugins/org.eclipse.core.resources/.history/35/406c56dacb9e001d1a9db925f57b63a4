@@ -1,0 +1,113 @@
+package com.OrangeHRMTestCases;
+
+
+
+import java.io.IOException;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import com.OrangeHRM.BaseTest;
+
+public class FullOrangeHRMDetails extends BaseTest {
+	//WebDriver driver;
+	@Test(priority=1)
+	public void loginPanelText() throws IOException {
+	
+//validating the Login page of orangeHRM Application
+    String expected_TitleoforangeHrmapplicationLogInpage="OrangeHRM";
+    System.out.println("The expected Title of the orangeHRMApplicationLogINpage is:"+expected_TitleoforangeHrmapplicationLogInpage);
+    String actual_TitleorangeHRMApplicationLogINpage=driver.getTitle();
+   System.out.println("The actual Title og the orangeHRMApplicationwebpage is:"+actual_TitleorangeHRMApplicationLogINpage);
+  if(actual_TitleorangeHRMApplicationLogINpage.equals(expected_TitleoforangeHrmapplicationLogInpage)) 
+ {
+     System.out.println("Its aLogIn page of orangeHrm Application-pass");
+ }
+  else
+  {
+     System.out.println("Its NoT aLogIn page of orangeHrm Application-fail");
+  }
+  //By LoginpanL=By.xpath("/html/body/div[1]/div/div[2]/form/div[1]");
+	WebElement Loginpan=driver.findElement(By.id("logInPanelHeading"));
+	String LoginPanelText=Loginpan.getText();
+System.out.println(LoginPanelText);
+	}
+	@Test(priority=2)
+	 public void output() throws InterruptedException, IOException {
+		
+		By usernameL=By.id("txtUsername");
+	    WebElement username=driver.findElement(usernameL);
+	    username.sendKeys("Krishnaveni");
+	    By passwordL=By.name("txtPassword");
+	    WebElement Password= driver.findElement(passwordL);
+	    Password.sendKeys("Kittu@123");
+	    By loginL=By.name("Submit");
+	    WebElement login =driver.findElement(loginL);
+	    login.click();
+	    
+	    
+	    By pimlocator=By.id("menu_pim_viewPimModule");
+	   	WebElement helloSignIn=driver.findElement(pimlocator);
+	   	Actions action=new Actions(driver);
+	   	action.moveToElement(helloSignIn).build().perform();
+		
+	   	
+	   	
+	   	
+	   	By Addempolyee=By.id("menu_pim_addEmployee");
+	    WebElement AddempolyeeL=driver.findElement(Addempolyee);
+	    AddempolyeeL.sendKeys("Add Employee");  
+	    AddempolyeeL.click();
+
+     //navigate to frist name
+	   	By fristname=By.id("firstName");
+	    WebElement fristnameL=driver.findElement(fristname);
+	    fristnameL.sendKeys("krishnaveni");
+	    
+	    Actions act=new Actions(driver);
+	    act.sendKeys(Keys.TAB).build().perform();
+  //Automating middle name
+	    act.sendKeys("middleNameText").build().perform();
+	    act.sendKeys(Keys.TAB).build().perform();
+//Automating Last nAme
+	    act.sendKeys("LastNameText").build().perform();
+//Employeeid
+	    act.sendKeys(Keys.TAB).build().perform();
+	    //Automating photograph
+	    
+	    act.sendKeys(Keys.TAB).build().perform();
+	    act.sendKeys(Keys.ENTER).build().perform();
+	    Thread.sleep(1000);
+	
+	    
+	    
+	 
+	    
+	 java.lang.Runtime.getRuntime().exec("C:\\Users\\makke\\OneDrive\\Desktop\\krishnaveni\\LiveTech\\photograph\\ram.exe");
+	Thread.sleep(3000);
+	
+	By saveButtonLactor=By.id("btnSave");
+	WebElement saveButton=driver.findElement(saveButtonLactor);
+	saveButton.click();
+	
+	
+	
+	// validating the image uploaded
+	// <input class="duplexBox" type="file" name="photofile" id="photofile">
+	By emplyeePhotographLocator=By.name("empPic"); 
+	WebElement employeephotograph=driver.findElement(emplyeePhotographLocator);
+	  
+	  boolean flag=employeephotograph.isDisplayed();
+	  
+	  
+	  Assert.assertTrue(flag, "fail");
+	//  .assertTrue(flag,"Employee photograph upload falied-fail");
+	  
+	 
+}
+}

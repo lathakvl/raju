@@ -1,0 +1,103 @@
+package com.OrangeHRMTestCases;
+
+import java.io.IOException;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
+
+import com.OrangeHRM.BaseTest;
+
+public class FullOrangeHRMDetails extends BaseTest {
+	//WebDriver driver;
+	@Test(priority=1)
+	public void loginPanelText() throws IOException {
+	
+//validating the Login page of orangeHRM Application
+    String expected_TitleoforangeHrmapplicationLogInpage="OrangeHRM";
+    System.out.println("The expected Title of the orangeHRMApplicationLogINpage is:"+expected_TitleoforangeHrmapplicationLogInpage);
+    String actual_TitleorangeHRMApplicationLogINpage=driver.getTitle();
+   System.out.println("The actual Title og the orangeHRMApplicationwebpage is:"+actual_TitleorangeHRMApplicationLogINpage);
+  if(actual_TitleorangeHRMApplicationLogINpage.equals(expected_TitleoforangeHrmapplicationLogInpage)) 
+ {
+     System.out.println("Its aLogIn page of orangeHrm Application-pass");
+ }
+  else
+  {
+     System.out.println("Its NoT aLogIn page of orangeHrm Application-fail");
+  }
+  //By LoginpanL=By.xpath("/html/body/div[1]/div/div[2]/form/div[1]");
+	WebElement Loginpan=driver.findElement(By.id("logInPanelHeading"));
+	String LoginPanelText=Loginpan.getText();
+System.out.println(LoginPanelText);
+	}
+	@Test(priority=2)
+	 public void output() {
+		
+		 WebElement userNameElement=driver.findElement(By.id("txtUsername")) ;
+	      userNameElement.sendKeys("Krishnaveni");
+	      By passwordL=By.name("txtPassword");
+	      WebElement Password= driver.findElement(passwordL);
+	      Password.sendKeys("Kittu@123");
+	      By logInButtonL=By.className("button");
+	      WebElement logInButton=driver.findElement(logInButtonL);
+	      logInButton.click();
+	      
+	      By welcomeadminL=By.linkText("Welcome Admin");
+	      WebElement welcomeAdmin=driver.findElement(welcomeadminL);
+	      welcomeAdmin.click();
+	      
+	      
+	  	By Addempolyee=By.id("menu_pim_addEmployee");
+	    WebElement AddempolyeeL=driver.findElement(Addempolyee);
+	    AddempolyeeL.sendKeys("Add Employee");  
+	    AddempolyeeL.click();
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	     
+	      WebDriverWait Wait=new WebDriverWait(driver,10);
+	      Wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Logout")));
+	      
+	      By logoutL=By.linkText("Logout"); 
+	      WebElement logout=driver.findElement(logoutL);
+	      logout.click();
+
+		
+	
+	
+	
+	
+	
+	
+	
+	}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+

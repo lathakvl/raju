@@ -1,0 +1,29 @@
+package com.Arrays;
+
+public class SingleDimensionalArrayExample {
+ public static void main(String[] args) {
+	int array1[]= new int[4];
+	array1[0]=10;
+	array1[1]=5;
+	array1[2]=20;
+	array1[3]=30;
+	/*
+	System.out.println(array1[0]);
+	System.out.println(array1[1]); 
+	System.out.println(array1[2]); 
+	System.out.println(array1[3]); 
+	 
+	for(int index=0;index<4;index++); 
+	for(int index=0;index<=3;index++);
+ */
+  for(int index=0;index<array1.length;index++)
+  {
+   System.out.println(array1[0]);
+   System.out.println(array1[index]);
+ 
+ }
+
+ }
+
+
+}

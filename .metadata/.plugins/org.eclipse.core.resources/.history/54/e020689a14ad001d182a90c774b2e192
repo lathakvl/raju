@@ -1,0 +1,15 @@
+#is the comment line in the properties file
+#id Locator for login page header text
+loginpageHeaderText= logInPanelHeading
+#idLocator for userName locator
+UserNameProperty=txtUsername
+#name Locator for password element
+passwordProperty=txtPassword
+#class Locator for login button
+loginButtonProperty=button
+#id Locator for login page invalid message
+loginpageInvalidErrormessage=spanMessage
+#id Locator for Home page welcome Admin
+home pageWelcomeproperty=welcome
+#Tetx Locator for logout link
+logoutLinkTestProperty=Logout

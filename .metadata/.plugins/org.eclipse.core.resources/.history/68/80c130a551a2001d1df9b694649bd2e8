@@ -1,0 +1,9 @@
+#LoginPanelTextElement-id locator
+loginpageLoginPanelProperty=logInPanelHeading
+UserNameElementProperty-id locator //userNameProperty=txtUsername
+PasswordElementProperty-name locator passwordProperty=txtPassword
+LoginbuttonElementProperty-class locator loginbuttonProperty=button
+WelcomeAdminElementProperty-id locator welcomeAdminProperty=welcome
+LogoutElementProperty-LinkText locator logoutProperty=Logout
+
+LoginPanelHeadingLKey=logInPanelHeading

@@ -1,0 +1,36 @@
+package loginfunctionalityofOrangeHRMapplication;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class welcome_adimnlogout {
+       public static void main(String[] args) {
+		
+    WebDriver driver;
+    String applicationurlAddress="http://127.0.0.1/orangehrm-4.2.0.1/";
+    System.setProperty("webdriver.chrome.driver", "./Browserdriverfils/chromedriver.exe");
+    driver=new ChromeDriver();
+    //Navigate to orange HRM application
+    driver.get(applicationurlAddress);
+    
+      WebElement userNameElement=driver.findElement(By.id("txtUsername")) ;
+      userNameElement.sendKeys("Krishnaveni");
+      By password=By.className("txtpassword");
+      WebElement Password= driver.findElement(password);
+      Password.sendKeys("Happy@123");
+      By logInButtonL=By.className("button");
+      WebElement logInButton=driver.findElement(logInButtonL);
+      logInButton.click();
+      
+       
+       
+       
+       
+       
+       
+       
+       
+       }
+}
